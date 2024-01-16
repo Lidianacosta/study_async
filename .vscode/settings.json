@@ -1,0 +1,20 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula Soft",
+    "files.autoSave": "off",
+    "explorer.compactFolders": false,
+    "editor.wordWrap": "on",
+    "editor.guides.bracketPairs": true,
+    "editor.renderWhitespace": "all",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true,
+    },
+    "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": "./venv/bin/python",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+}
