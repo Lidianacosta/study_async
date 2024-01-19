@@ -37,13 +37,7 @@
                         </div>
                         <br>
                         <h3>Logar</h3>
-                        {% if messages %}
-                            {% for message in messages %}
-                                <section class="alert {{message.tags}}">
-                                    {{message}}
-                                </section>
-                            {% endfor %}
-                        {% endif %}
+                        {% include 'partials/_messages.html' %}
                         <form action="{% url 'usuarios:login' %}" method="POST">{% csrf_token %}
                             <label>Username</label>
                             <input type="text" class="input-form" name="username" id="">

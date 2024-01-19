@@ -42,7 +42,7 @@ def login(request):
         if user:
             auth.login(request, user)
             messages.success(request, 'Logado!')
-            return redirect('')  # mandar para o flascard
+            return redirect('flashcard:novo_flashcard')
         messages.error(request, 'username or senha inválido')
     return render(request, 'usuarios/login.html')
 
