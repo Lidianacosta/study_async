@@ -46,6 +46,7 @@ class FlashcardDesafio(models.Model):
 
 
 class Desafio(models.Model):
+    STATUS = ('Pendente', 'Completo')
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     titulo = models.CharField(max_length=100)
     categoria = models.ManyToManyField(Categoria)
@@ -62,5 +63,5 @@ class Desafio(models.Model):
     def status(self):
         respondidas = self.flashcards.all().filter(respondido=True).count()
         if respondidas < self.quantidade_perguntas:
-            return 'Pendente'
-        return 'Completo'
+            return self.STATUS[0]
+        return self.STATUS[1]

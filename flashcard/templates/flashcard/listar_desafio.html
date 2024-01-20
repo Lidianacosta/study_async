@@ -42,6 +42,15 @@
                 </select>
             </div>
             <div class="col-md">
+                <label for="">Status</label>
+                <select name="status" class="form-select">
+                    <option value="">Todos</option>
+                    {% for S in Status %}
+                    <option value="{{S}}">{{S}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md">
                 <br>
                 <input type="submit" value="Filtrar" class="btn-cadastro">
                 </form>

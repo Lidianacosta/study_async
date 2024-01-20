@@ -1,32 +1,32 @@
-.badge-categoria{
+.badge-categoria {
     padding: 5px;
     background-color: #122342;
 
 }
 
-.box-new-flashcard{
+.box-new-flashcard {
     margin: 0;
 }
 
-.icone-vermelho{
-    color:red;
+.icone-vermelho {
+    color: red;
     font-size: 30px;
 }
 
-.icone-verde{
-    color:green;
+.icone-verde {
+    color: green;
     font-size: 30px;
 }
 
-.op2{
+.op2 {
     opacity: .3;
 }
 
-.fonte-p{
+.fonte-p {
     font-size: 25px;
 }
 
-.btn-desafio{
+.btn-desafio {
     width: 100% !important;
     color: black;
     text-decoration: none;
@@ -35,31 +35,32 @@
     font-size: 25px;
 }
 
-.box-listar{
+.box-listar {
 
     background-color: #0b1526;
     padding: 20px;
 }
 
-table{
+table {
     width: 100%;
     padding: 20px;
     text-align: center;
 
 }
 
-.linha{
+.linha {
     height: 40px;
     background-color: var(--dark-color);
     padding: 20px;
 }
 
 
-td, th{
+td,
+th {
     padding: 20px;
 }
 
-tr{
+tr {
     background-color: var(--main-color);
 
 }
